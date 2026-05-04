@@ -1,0 +1,5 @@
+Today I started my first DevOps portfolio project.
+I created the project folder structure.
+I created a simple index.html file.
+I wrote a README.md file for GitHub.
+Next, I will learn how to use Git and push this project to GitHub.
