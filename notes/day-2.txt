@@ -1,0 +1,9 @@
+Today I learned how to run my web app inside a Docker container.
+
+Dockerfile tells Docker how to build an image.
+Image is a packaged version of the application.
+Container is the running version of an image.
+Port mapping connects my computer port to the container port.
+
+Today I used port 8080 on my computer and port 80 inside the container.
+The web page worked on http://localhost:8080.
