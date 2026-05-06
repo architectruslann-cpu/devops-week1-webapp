@@ -1,0 +1,13 @@
+Today I deployed my Docker web app to AWS EC2.
+
+EC2 is a Linux server running in AWS cloud.
+Security Group works like a firewall for EC2.
+I used SSH to connect from my computer to the EC2 server.
+I installed Docker on EC2 and ran my web app inside a container.
+The app worked on the EC2 public IP with port 8080.
+
+The biggest issue today was the Security Group name error.
+AWS did not allow a security group name starting with sg-.
+I fixed it by changing the name to devops-week1-webapp-sg.
+
+At the end of the lab, I terminated the EC2 instance to avoid extra cost.
