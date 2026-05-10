@@ -1,0 +1,19 @@
+1. Bu projede ne yaptım?
+
+Bu projede basit bir HTML web uygulaması oluşturdum. Uygulamayı Docker ile container haline getirdim. Önce local bilgisayarımda test ettim, sonra AWS EC2 üzerinde çalıştırdım. Daha sonra EC2 altyapısını Terraform ile kod olarak oluşturdum.
+
+2. Hangi araçları kullandım?
+
+Git, GitHub, HTML, Docker, Nginx, AWS EC2, Security Group, SSH ve Terraform kullandım.
+
+3. En zorlandığım yer neydi?
+
+En zorlandığım yerler SSH bağlantısı, Security Group port ayarları ve Terraform ile oluşturulan EC2’ye deploy süreciydi.
+
+4. En önemli öğrendiğim şey neydi?
+
+En önemli öğrendiğim şey şuydu: EC2 oluşturmak uygulamanın otomatik çalıştığı anlamına gelmez. Sunucuya bağlanmak, Docker kurmak, projeyi indirmek, image build etmek ve container çalıştırmak gerekir.
+
+5. Bu projeyi mülakatta nasıl anlatırım?
+
+Bu projede basit bir web uygulamasını Docker ile container haline getirdim. Uygulamayı önce local ortamda test ettim. Sonra AWS EC2 Ubuntu sunucusuna SSH ile bağlanıp Docker kurdum, GitHub reposunu indirdim ve container olarak çalıştırdım. Security Group ile SSH için 22 portunu, web erişimi için 8080 portunu açtım. Daha sonra aynı EC2 altyapısını Terraform ile kod olarak oluşturdum. Deploy sırasında container, port ve Security Group kontrolleriyle troubleshooting pratiği yaptım. En sonunda Terraform destroy ile kaynakları sildim ve maliyet riskini kapattım.
