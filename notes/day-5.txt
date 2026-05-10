@@ -1,0 +1,14 @@
+Today I learned the basic idea of Terraform.
+
+Terraform is used to create infrastructure with code.
+Instead of creating EC2 manually in AWS Console, I can describe the infrastructure in .tf files.
+
+main.tf defines the main AWS resources.
+variables.tf defines values like region, instance type, key name, and my IP.
+outputs.tf shows useful information after Terraform creates resources.
+
+Provider tells Terraform which cloud platform to use.
+Resource means an infrastructure object like EC2 or Security Group.
+State file is Terraform's memory. It tracks what Terraform created in AWS.
+
+Today I did not run terraform apply because I did not want to create AWS resources or extra cost.

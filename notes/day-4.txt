@@ -1,0 +1,20 @@
+Today I practiced basic troubleshooting for my EC2 Docker deployment.
+
+Error 1:
+I stopped the running Docker container.
+After that, the web app did not open in the browser.
+The reason was that the container was stopped.
+I fixed it by starting the container again.
+
+Error 2:
+I tested the app with the wrong port: 8081.
+The app was running on port 8080, not 8081.
+The reason was wrong port testing.
+I fixed it by using the correct URL with port 8080.
+
+The troubleshooting order that helped me:
+1. Check if the EC2 instance is running.
+2. Check if the Docker container is running.
+3. Check the port mapping.
+4. Check the correct browser URL.
+5. Check the Security Group rules.
