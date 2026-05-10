@@ -1,0 +1,25 @@
+Today I created an EC2 instance using Terraform.
+
+Terraform created:
+1. An EC2 instance
+2. A Security Group
+
+The difference between AWS Console and Terraform:
+AWS Console means creating resources manually by clicking.
+Terraform means creating resources with code.
+
+After Terraform apply, I used the public IP output to connect to the EC2 instance with SSH.
+Then I installed Docker and Git on the EC2 server.
+I cloned my GitHub repository.
+I built the Docker image on the EC2 server.
+I ran the container with port mapping 8080:80.
+
+The web app worked on:
+http://63.177.107.27:8080
+
+At the end, I used terraform destroy to delete the EC2 instance and Security Group.
+This is important to avoid extra AWS cost.
+
+The biggest lesson:
+Creating EC2 with Terraform does not automatically deploy the app.
+I still need to SSH into the server, install Docker, clone the repo, build the image, and run the container.
